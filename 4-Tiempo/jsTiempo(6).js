@@ -3,7 +3,7 @@ var contador=0;
 
 function inicio()
 {
-	document.getElementById("secreto").style.visibility="hidden";
+	document.getElementById("secreto").style.visibility="hidden";  //esto oculta 
 	alert("function inicio.");
 	miTemporizador = setTimeout(SegundosEnElAire, 3000);
 	
