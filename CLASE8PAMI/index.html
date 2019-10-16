@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //let arr = ["juan",true,1234,3.14,[3,2,1],{nombre:"jose"}];
+        let numeros =[2,1,5,8,96,7];
+        let nombres = ["juan","albaro", "Carmen","Emilia","Tomas","timoteo"]
+        for(let i = 0; i<numeros.length; i++){
+
+            console.log(numeros[i]);
+
+        }
+        
+
+        //ordenar array de nombres
+
+        nombres.sort();
+
+        for(let i = 0; i<nombres.length; i++){
+
+            console.log(nombres[i]);
+
+            }
+
+            //ordenar array de numeros
+
+        numeros.sort(comparador);
+
+        function comparador(a,b){
+            return a - b;
+        }
+     //console.log("Elemento en el indice 4 "+numeros[4]);
+
+let personas = [
+{nombre:"Pepe", edad:15},
+{nombre:"Juan", edad:44},
+{nombre:"Jorge", edad:26},
+{nombre:"Miguel", edad:14},
+{nombre:"Anibal", edad:22},
+{nombre:"MAtiass", edad:55}
+
+];
+personas.sort(compararPersonas);
+
+function compararPersonas(p1,p2){
+
+  return p1.nombre.length - p2.nombre.length;
+}
+for(let i=0; i<personas; i++){
+    console.log(personas[i]);
+}
+    </script>
+</body>
+</html>
+<!--https://www.mockaroo.com/-->
